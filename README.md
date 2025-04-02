@@ -28,7 +28,7 @@ This document provides a comprehensive explanation of the CLR(1) Parser web appl
    - [Error Handling](#error-handling)
 5. [Code Explanation](#code-explanation)
    - [standalone_parser.py](#standalone_parserpy)
-   - [app_with_frontend.py](#app_with_frontendpy)
+   - [server.py](#serverpy)
    - [static/js/script.js](#staticjsscriptjs)
    - [static/css/styles.css](#staticcssstylesjs)
    - [templates/index.html](#templatesindexhtml)
@@ -158,7 +158,7 @@ The parser processes the grammar in several steps:
 
 ### API Integration
 
-The FastAPI application (`app_with_frontend.py`) provides the following endpoints:
+The FastAPI application (`server.py`) provides the following endpoints:
 
 1. **`GET /`**: Serves the HTML frontend
 2. **`GET /api`**: Provides API information
@@ -306,7 +306,7 @@ This file contains the complete implementation of the CLR(1) parser.
    - Parses an input string using the CLR parsing table
    - Maintains a stack and tracks the parsing steps
 
-### app_with_frontend.py
+### server.py
 
 This file implements the FastAPI application that serves both the API and the frontend.
 
