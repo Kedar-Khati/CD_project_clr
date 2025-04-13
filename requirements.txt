@@ -1,0 +1,6 @@
+fastapi==0.68.1
+uvicorn==0.15.0
+pydantic==1.8.2
+Jinja2==3.0.1
+python-multipart==0.0.5
+typing-extensions==3.10.0.0
